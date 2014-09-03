@@ -1,9 +1,6 @@
-dTree
-=====
-
-Jquery Directory Tree Plugin
-
-jquery tree menu
+A tree menu plugin for jQuery framework 
 
 Example :
 http://jsfiddle.net/nnLg07ag/10/
+
+Jquery Directory Tree Plugin
