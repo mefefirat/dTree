@@ -82,14 +82,14 @@
     $.fn.dTree.set_cookie = function(name, value)
     {
          document.cookie = name + "=" + value;
-    }
+    };
     
     $.fn.dTree.get_cookie = function(name)
     {
         var value = "; " + document.cookie;
         var parts = value.split("; " + name + "=");
-        if (parts.length == 2) return parts.pop().split(";").shift();
-    }
+        if (parts.length === 2) return parts.pop().split(";").shift();
+    };
     
     $.fn.dTree.check_cookie = function(name)
     {
@@ -125,12 +125,12 @@
             $same_level.toggle(250);
             $.fn.dTree.set_icons($selected.parent().siblings(".folder-group").children('span:first'));    
         }
-    }
+    };
     
     $.fn.dTree.tree_first_element = function($selected)
     {
          $selected.children("span.join").remove();
          $selected.children("span").addClass("main").removeClass("page");
-    }
+    };
           
 }( jQuery ));
