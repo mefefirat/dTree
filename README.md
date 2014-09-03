@@ -3,5 +3,5 @@ dTree
 
 Jquery Directory Tree Plugin
 
-Example link :
+Example :
 http://jsfiddle.net/mefe/nnLg07ag/7/
