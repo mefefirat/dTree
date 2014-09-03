@@ -4,4 +4,4 @@ dTree
 Jquery Directory Tree Plugin
 
 Example :
-http://jsfiddle.net/mefe/nnLg07ag/7/
+http://jsfiddle.net/nnLg07ag/10/
