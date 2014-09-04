@@ -59,7 +59,7 @@
                     }
                 }
             }
-            $(this).find('.plus, .minus').click(function(){
+            $(this).on('click', '.plus, .minus', function(){
                 
                 if(settings.useCookie)
                 {
