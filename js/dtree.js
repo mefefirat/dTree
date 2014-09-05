@@ -31,7 +31,16 @@
            
             $ul.children('li.folder-group:last-child').addClass("last");
            
-            if($li.hasClass("active"))
+            
+            if(settings.useCookie && $.fn.dTree.check_cookie("dTree"))
+            {
+                var object_index = JSON.parse($.fn.dTree.get_cookie("dTree"));
+                $.each( object_index, function( key, value ) {
+                    $this = $ul.find("li.folder-group").eq(value);
+                    $.fn.dTree.set_icons($this.children('span:first')); 
+                    $this.children('ul:first').toggle();
+                });
+            } else if($li.hasClass("active"))
             {
                 $active = $ul.find("li.folder-group.active");
                 $active.each(function(){
@@ -44,21 +53,7 @@
                     $(this).children('ul:first').toggle();
                 });    
             }   
-            else
-            {
-                if(settings.useCookie)
-                {
-                    if($.fn.dTree.check_cookie("dTree"))
-                    {
-                        var object_index = JSON.parse($.fn.dTree.get_cookie("dTree"));
-                        $.each( object_index, function( key, value ) {
-                            $this = $ul.find("li.folder-group").eq(value);
-                            $.fn.dTree.set_icons($this.children('span:first')); 
-                            $this.children('ul:first').toggle();
-                        });
-                    }
-                }
-            }
+            
             $(this).on('click', '.plus, .minus', function(){
                 
                 if(settings.useCookie)
