@@ -48,3 +48,11 @@ http://jsfiddle.net/nnLg07ag/10/
 	</li>
 </ul>
 </div>
+```
+### 3.Call the plugin
+
+```html
+$(document).ready(function(){
+	$(".dTree").dTree();
+});  
+```
