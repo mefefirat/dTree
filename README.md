@@ -1,6 +1,7 @@
-A tree menu plugin for jQuery framework 
+# jQuery Tree Menu
 
-Example :
+A tree menu plugin for jQuery framework
+
+## Examples
 http://jsfiddle.net/nnLg07ag/10/
 
-Jquery Directory Tree Plugin
